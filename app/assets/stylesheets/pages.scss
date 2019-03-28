@@ -1,0 +1,105 @@
+/* Formatação da interface do site */
+
+div#interface {
+  
+}
+
+/* Formatação Cabeçalho */
+
+header#cabecalho {
+  width: 1500px;
+  height: 125px;
+  margin: auto;
+  background-color: lightgray;
+}
+
+header#cabecalho h1 {
+  text-align: right;
+  font-size: 23px; 
+}
+
+/* Formatação do Menu */
+
+nav#menu {
+  display: block;
+}
+
+nav#menu ul {
+  text-transform: uppercase;
+  position: absolute;
+}
+
+nav#menu li {
+  display: inline-block;
+  padding: 5px;
+  font-size: 30px;
+}
+
+nav#menu li:hover {
+  background-color: black;
+}
+
+nav#menu a {
+  
+}
+
+nav#menu a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Formatação corpo */
+
+figure.foto-legenda {
+  position: relative;
+}
+
+.img-corpo {
+  max-height: 500px;
+}
+
+section#corpo {
+  margin: auto;
+}
+
+section#corpo h2 {
+  position: absolute;
+  top: 0px;
+  color: white;
+}
+
+#btn-corpo {
+  position: absolute;
+  top: 100px;
+  left: 1000px;
+}
+
+/* Formatação Rodape */
+
+footer#rodape {
+  width: 1500px;
+  height: 75px;
+  margin: auto;
+  background-color: lightgray;
+}
+
+footer#rodape h6 {
+  text-align: right;
+  font-size: 10px;
+}
+
+footer#rodape p {
+  text-align: center;
+  padding: 10px;
+}
+
+.facebook {
+  width: 50px;
+  height: 50px;
+}
+
+.twitter {
+  width: 50px;
+  height: 50px;
+  
+}

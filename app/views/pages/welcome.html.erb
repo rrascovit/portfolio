@@ -1,0 +1,34 @@
+<div id="interface">
+      
+  <header id="cabecalho">
+    <hgroup>
+      <h1>Rafael Rascovit</h1>
+    </hgroup>
+    <nav id="menu">
+      <ul>
+        <li><a>Home</a></li>
+        <li><a>Portfolio</a></li>
+        <li><a>About</a></li>
+        <li><a>Contact</a></li>
+      </ul>
+    </nav>
+            
+  </header>
+      
+  <section id="corpo">
+    <figure class="foto-legenda">
+      <%= image_tag ("desfocado.jpg"), class: "img-corpo" %>
+      <figcaption>
+        <h2>Hello! My name is <span>Rafael Rascovit</span> and I have creative ideas and build websites.</h2>
+        <%= link_to 'See my work', '', class: "btn btn-info", id: "btn-corpo" %>
+      </figcaption>
+    </figure>
+  </section>
+    
+  <footer id="rodape">
+    <p><a href="https://www.facebook.com/rafael.rascovit" target="_blank"><%= image_tag ("facebook-logo.png"), class: "facebook" %></a><a href="https://twitter.com/rafaelrascovit" target="_blank"><%= image_tag ("twitter-logo-silhouette.png"), class: "twitter" %></a></p>
+    <h6>Copyright&copy; 2019</h6>
+  </footer>
+      
+</div>
+    
