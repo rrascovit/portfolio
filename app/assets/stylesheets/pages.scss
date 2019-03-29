@@ -48,7 +48,7 @@ nav#menu a:hover {
 /* Formatação corpo */
 
 section#corpo {
-  background-image: url('nature.jpg');
+  background-image: url(asset_path('nature.jpg'));
   background-size: cover;
   background-position: center;
   height: 500px;
