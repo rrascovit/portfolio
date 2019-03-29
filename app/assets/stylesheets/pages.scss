@@ -1,20 +1,23 @@
 /* Formatação da interface do site */
 
-div#interface {
-  
+div#interface {  
+  margin: 10px auto 0px auto;  
 }
 
 /* Formatação Cabeçalho */
 
 header#cabecalho {
-  width: 1500px;
-  height: 125px;
+  width: 80%; 
+  height: 75px;
   margin: auto;
+  position: relative;
 }
 
 header#cabecalho h1 {
-  text-align: right;
-  font-size: 23px; 
+  position: absolute;
+  font-size: 18px;
+  bottom: 10px;
+  right: 10px;
 }
 
 /* Formatação do Menu */
@@ -26,12 +29,12 @@ nav#menu {
 nav#menu ul {
   text-transform: uppercase;
   position: absolute;
+  padding-left: 0px;
 }
 
 nav#menu li {
   display: inline-block;
-  padding: 5px;
-  font-size: 30px;
+  padding: 3px 3px 3px 0px;
 }
 
 nav#menu a {
@@ -44,36 +47,40 @@ nav#menu a:hover {
 
 /* Formatação corpo */
 
-figure.foto-legenda {
+section#corpo {
+  background-image: url('nature.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  width: 100%;
+  margin: auto;
+  position: relative;  
+}
+
+div#legenda {
+  width: 80%;
+  margin: auto;
   position: relative;
 }
 
-.img-corpo {
-  max-height: 500px;
-}
-
-section#corpo {
-  margin: auto;
-}
-
-section#corpo h2 {
+div#legenda h2 {
   position: absolute;
-  top: 30px;
-  color: white;
-  width: 1500px;
+  top: 75px;
+  right: 0px;
   text-align: right;
+  color: white;
 }
 
 #btn-corpo {
   position: absolute;
-  top: 150px;
-  left: 1250px;
+  top: 200px;
+  right: 0px;
 }
 
 /* Formatação Rodape */
 
 footer#rodape {
-  width: 1500px;
+  width: 80%;
   height: 75px;
   margin: auto;
 }
@@ -95,6 +102,5 @@ footer#rodape p {
 
 .twitter {
   width: 50px;
-  height: 50px;
-  
+  height: 50px;  
 }

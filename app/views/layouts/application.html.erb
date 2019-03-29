@@ -2,36 +2,49 @@
 <html lang="pt-br">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - TMJ</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,500,700" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
   </head>
 
   <body>    
     <div id="interface">      
       <header id="cabecalho">
-      <hgroup>
-        <h1>Rafael Rascovit</h1>
-      </hgroup>
-      <nav id="menu">
-        <ul>
-          <li><a><%= link_to 'Home', 'welcome', class: "btn btn-lg", id: "btn-menu" %></a></li>
-          <li><a><%= link_to 'Portfolio', 'portfolio', class: "btn btn-lg", id: "btn-menu" %></a></li>
-          <li><a><%= link_to 'About', 'about', class: "btn btn-lg", id: "btn-menu" %></a></li>
-          <li><a><%= link_to 'Contact', 'contact', class: "btn btn-lg", id: "btn-menu" %></a></li>
-        </ul>
-      </nav>            
+        <hgroup>
+          <h1>Rafael Rascovit</h1>
+        </hgroup>
+        <!-- <div class="btn-group" id="menu">
+          <button type="button" class="btn btn-lg">Menu</button>
+          <button type="button" class="btn btn-lg dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+            <span class="caret"></span>
+          </button>
+          <div class="dropdown-menu">
+            <a><%= link_to 'Home', 'welcome', class: "btn", id: "btn-menu" %></a>
+            <a><%= link_to 'Portfolio', 'portfolio', class: "btn btn-lg", id: "btn-menu" %></a>
+            <a><%= link_to 'About', 'about', class: "btn btn-lg", id: "btn-menu" %></a>
+            <a><%= link_to 'Contact', 'contact', class: "btn btn-lg", id: "btn-menu" %></a>
+          </div>
+        </div> -->
+        <nav id="menu">
+          <ul>
+            <li><a><%= link_to 'Home', 'welcome', class: "btn btn-lg", id: "btn-menu" %></a></li>
+            <li><a><%= link_to 'Portfolio', 'portfolio', class: "btn btn-lg", id: "btn-menu" %></a></li>
+            <li><a><%= link_to 'About', 'about', class: "btn btn-lg", id: "btn-menu" %></a></li>
+            <li><a><%= link_to 'Contact', 'contact', class: "btn btn-lg", id: "btn-menu" %></a></li>
+          </ul>
+        </nav>            
       </header>
       
       <%= yield %>
       
       <footer id="rodape">
-        <p><a href="https://www.facebook.com/rafael.rascovit" target="_blank"><%= image_tag ("facebook-logo.png"), class: "facebook" %></a><a href="https://twitter.com/rafaelrascovit" target="_blank"><%= image_tag ("twitter-logo-silhouette.png"), class: "twitter" %></a></p>
+        <p><a href="https://www.facebook.com/rafael.rascovit" target="_blank"><%= image_tag ("facebook-logo.png"), class: "facebook" %></a>  <a href="https://twitter.com/rafaelrascovit" target="_blank"><%= image_tag ("twitter-logo-silhouette.png"), class: "twitter" %></a></p>
         <h6>Copyright&copy; 2019</h6>
       </footer>      
     </div>
